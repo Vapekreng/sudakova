@@ -1,0 +1,5 @@
+def roll_list(old_list, roll_count):
+    n = len(old_list)
+    checked_roll_count = roll_count % n
+    new_list = old_list[n - checked_roll_count:] + old_list[:n - checked_roll_count]
+    return new_list
